@@ -12,4 +12,6 @@ extension BuildContextX on BuildContext {
   }
   bool get hasVirtualHome => mediaQuery.padding.bottom > 0;
   S get s => S.of(this);
+
+  bool get isTablet => MediaQuery.of(this).size.width >= 600.0;
 }

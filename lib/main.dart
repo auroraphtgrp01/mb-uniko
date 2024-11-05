@@ -45,7 +45,7 @@ void main() {
             BlocListener<AuthCubit, AuthState>(listener: (context, state) {
               final router = getIt<AppRouter>();
               state.whenOrNull(
-                  authenticated: (user) => router.replaceAll([const HomeRoute()]),
+                  authenticated: (user) => router.replaceAll([const TabBarRoute()]),
                   unauthenticated: () => router.replaceAll([const AuthRoute()]));
             }),
           ],

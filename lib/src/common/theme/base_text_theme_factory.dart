@@ -71,26 +71,93 @@ abstract class BaseTextThemeFactory implements TextThemeFactory {
         fontWeight: FontWeight.w700,
         letterSpacing: 0,
       );
+  @override
+  TextStyle get contentMedium =>
+      regular.copyWith(fontSize: 16, color: ColorName.whiteF1F1F1);
+  @override
+  TextStyle get contentLarge =>
+      regular.copyWith(fontSize: 16, color: ColorName.grey8E8E8E);
+  @override
+  TextStyle get displayMedium =>
+      regular.copyWith(fontSize: 16, color: ColorName.primary);
+  @override
+  TextStyle get displayLarge =>
+      bold.copyWith(fontSize: 16, color: ColorName.primary);
+  @override
+  TextStyle get displaySmall =>
+      regular.copyWith(fontSize: 14, color: ColorName.grey787878);
 
-  @override TextStyle get displayLarge => regular.copyWith(fontSize: 57);
-  @override TextStyle get displayMedium => regular.copyWith(fontSize: 45);
-  @override TextStyle get displaySmall => regular.copyWith(fontSize: 36);
+  @override
+  TextStyle get headlineLarge => regular.copyWith(fontSize: 32);
+  @override
+  TextStyle get headlineMedium => regular.copyWith(
+      fontSize: 11, color: ColorName.primary, fontWeight: FontWeight.bold);
+  @override
+  TextStyle get headlineSmall =>
+      regular.copyWith(fontSize: 14, color: ColorName.whiteF1F1F1);
+  @override
+  TextStyle get contentSmall =>
+      regular.copyWith(fontSize: 12, color: ColorName.whiteF1F1F1);
 
-  @override TextStyle get headlineLarge => regular.copyWith(fontSize: 32);
-  @override TextStyle get headlineMedium => regular.copyWith(fontSize: 28);
-  @override TextStyle get headlineSmall => regular.copyWith(fontSize: 24);
+  @override
+  TextStyle get headingSmall =>
+      regular.copyWith(fontSize: 12, color: ColorName.primary);
 
-  @override TextStyle get titleLarge => medium.copyWith(fontSize: 22);
-  @override TextStyle get titleMedium => medium.copyWith(fontSize: 16);
-  @override TextStyle get titleSmall => medium.copyWith(fontSize: 14);
+  @override
+  TextStyle get captionLarge =>
+      bold.copyWith(fontSize: 16, color: ColorName.whiteF1F1F1);
 
-  @override TextStyle get bodyLarge => regular.copyWith(fontSize: 22);
-  @override TextStyle get bodyMedium => regular.copyWith(fontSize: 16);
-  @override TextStyle get bodySmall => regular.copyWith(fontSize: 14);
+  @override
+  TextStyle get productTitle =>
+      bold.copyWith(fontSize: 20, color: ColorName.primary);
 
-  @override TextStyle get labelLarge => medium.copyWith(fontSize: 14);
-  @override TextStyle get labelMedium => medium.copyWith(fontSize: 12);
-  @override TextStyle get labelSmall => medium.copyWith(fontSize: 11);
+  @override
+  TextStyle get discount =>
+      regular.copyWith(fontSize: 10, color: ColorName.primary);
 
-  @override TextStyle get caption => medium.copyWith(fontSize: 10);
+  @override
+  TextStyle get originalPrice => regular.copyWith(
+      fontSize: 16,
+      color: ColorName.grey8E8E8E,
+      decoration: TextDecoration.lineThrough,
+      decorationColor: ColorName.grey8E8E8E);
+
+  @override
+  TextStyle get titleSmall =>
+      bold.copyWith(fontSize: 14, color: ColorName.greyBBBBBB);
+
+  @override
+  TextStyle get titleLarge =>
+      bold.copyWith(fontSize: 14, color: ColorName.primary);
+  @override
+  TextStyle get titleMedium =>
+      regular.copyWith(fontSize: 14, color: ColorName.black1E1E1E);
+  @override
+  TextStyle get bodySmall =>
+      regular.copyWith(fontSize: 11, color: ColorName.primary);
+
+  @override
+  TextStyle get bodyMedium =>
+      regular.copyWith(fontSize: 14, color: ColorName.grey8E8E8E);
+  @override
+  TextStyle get bodyLarge => bold.copyWith(color: ColorName.whiteF1F1F1);
+  @override
+  TextStyle get captionMedium =>
+      regular.copyWith(fontSize: 14, color: ColorName.grey787878);
+
+  @override
+  TextStyle get labelLarge =>
+      bold.copyWith(fontSize: 14, color: ColorName.white);
+  @override
+  TextStyle get labelMedium =>
+      bold.copyWith(fontSize: 14, color: ColorName.primary);
+  @override
+  TextStyle get labelSmall =>
+      regular.copyWith(fontSize: 10, color: ColorName.grey787878);
+  @override
+  TextStyle get caption =>
+      regular.copyWith(fontSize: 14, color: ColorName.primary);
+  @override
+  TextStyle get captionSmall =>
+      regular.copyWith(fontSize: 14, color: ColorName.whiteF1F1F1);
 }
